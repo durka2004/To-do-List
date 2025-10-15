@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div class="container">
+        <h2>✨ Todo List ✨</h2>
+
+        <div class="input-area">
+            <input id="addTask" type="text" placeholder="Enter a task...">
+            <button id="submit">Add Task</button>
+        </div>
+
+        <h3>Pending Tasks</h3>
+        <ul id="todoList"></ul>
+
+        <h3>Completed ✅</h3>
+        <ul id="donelist"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+<html>
+    <head>
+        <title>
+            Todo
+        </title>
+    </head>
+    <body>
+        <h2>
+            Todo List
+        </h2>
+        <ul id='todoList'></ul>
+        <div>
+        <input id="addTask" type="text">
+        <button id="submit">Add Task</button>
+        </div>
+        <h3>Completed </h3>
+        <ul id="donelist">
+
+        </ul>
+    </body>
+
+  
+    <script>
+       let submit=document.getElementById('submit');  // element stores in submit
+       let addTask=document.getElementById('addTask');   //gets input for task and stored
+        let todoList=document.getElementById('todoList'); //pending task 
+        let donelist=document.getElementById('donelist'); //completed task
+
+       let list=new Array();   //keep task texts
+       
+       submit.addEventListener('click', (event)=>{
+           if(addTask.value !='')
+           {
+           list.push(addTask.value);                     //push task in array
+          todoList.innerHTML +='<li id="'+(list.length-1)+'"><button onClick="complete('+(list.length-1)+')">'+addTask.value+'</button ></li>';
+          addTask.value='';
+           }
+       });
+
+       function complete (id){
+               donelist.innerHTML+='<li>'+list[id]+'</li>';
+               document.getElementById(id).style.display="none";
+       }
+    </script>
+    -->
+</html>

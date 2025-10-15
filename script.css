@@ -1,0 +1,87 @@
+ body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 15px rgba(0,0,0,0.2);
+            width: 400px;
+        }
+
+        h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        .input-area {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #66a6ff;
+            box-shadow: 0 0 5px rgba(102,166,255,0.6);
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 10px 15px;
+            font-size: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #66a6ff;
+            color: white;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #558de8;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #f9f9f9;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        li:hover {
+            background: #65abbb;
+        }
+
+        .done-item {
+            text-decoration: line-through;
+            color: gray;
+            background: #e0ffe0 !important;
+        }
